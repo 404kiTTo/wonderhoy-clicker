@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Wonderhoy. Wonderhoy Clicker, Emu Otori" />
+    <meta name="description" content="A Wonderhoy Clicker" />
+    <meta name="author" content="404eRRoR" />
+    <title>Wonderhoy Clicker</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1.title {
+        -webkit-text-stroke: 5px black;
+        paint-order: stroke fill;
+      }
+      button.wonderbutton {
+        -webkit-text-stroke: 10px white;
+        paint-order: stroke fill;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title">Welcome to my <em>Wonderhoy</em> Clicker!</h1>
+    <button onclick="toggleSFX()" class="sfx_button">
+    <img src="images/icons/sfx-off.png" class="sfx-off" alt="sfx_off">
+    <img src="images/icons/sfx-on.png" class="sfx-on" alt="sfx_on">
+    </button>
+    <div>
+      <div class="stamp">
+        <img src="images/wonderhoy.webp" alt="Emu Wonderhoy" />
+      </div>
+      <audio id="emu_wonderhoy">
+        <source src="audio/emu_wonderhoy.wav" type="audio/wav" />
+        <source src="audio/emu_wonderhoy.m4a" type="audio/m4a" />
+        <source src="audio/emu_wonderhoy.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="wonderhoy_button">
+        <button onclick="wonderhoy()" class="wonderbutton">WONDERHOY!</button>
+      </div>
+      <p class="tutorial">Click the button to <em>Wonderhoy</em>!</p>
+      <p class="counter">
+        Wonderhoy counter: <span class="wonderhoy_counter">0</span>
+      </p>
+    </div>
+    <button onclick="linksClick()" class="links">LINKS!</button>
+    <div class="links_popup">
+      <div class="links_top">
+      <p class="link_title""><img src="images/emu_sparkly.webp" class="emu_sparkly" alt="Emu Sparkly"> LINKS! <img src="images/emu_sparkly.webp" class="emu_sparkly" alt="Emu Sparkly"></p>
+      <p>
+        Inspired by:
+        <a href="https://neal.fun/stimulation-clicker/" target="_blank"> Stimulation Clicker</a> from neal.fun (by Neal Agarwal)
+      </p>
+      </div>
+      <br>
+      <p style="font-weight: bold">Follow my socials!</p>
+      <a href="https://www.youtube.com/watch?v=GKJt6ci-Z8U" target="_blank">Placeholder Link</a>
+      <p>Wanna donate? <a href="https://ko-fi.com/404397637" target="_blank">Ko-fi!</a></p>
+    </div>
+    <p class="version">Beta v0.1: Work in Progress!</p>
+    <script src="index.js"></script>
+  </body>
+</html>
