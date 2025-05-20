@@ -21,44 +21,63 @@
   </head>
 
   <body>
-    <h1 class="title">Welcome to my <em>Wonderhoy</em> Clicker!</h1>
+    <h1 class="title">Welcome to my <em>Wonderhoy Clicker</em>!</h1>
+    
+    <audio id="emu_hello">
+      <source src="audio/emu_hello.wav" type="audio/wav">
+      <source src="audio/emu_hello.m4a" type="audio/m4a">
+      <source src="audio/emu_hello.mp3" type="audio/mp3">
+      Your browser does not support the audio file type.
+    </audio>
     <button onclick="toggleSFX()" class="sfx_button">
-    <img src="images/icons/sfx-off.png" class="sfx-off" alt="sfx_off">
-    <img src="images/icons/sfx-on.png" class="sfx-on" alt="sfx_on">
+      <img src="images/icons/sfx-off.png" draggable="false" class="sfx-off" alt="sfx_off" />
+      <img src="images/icons/sfx-on.png" draggable="false" class="sfx-on" alt="sfx_on" />
     </button>
     <div>
       <div class="stamp">
-        <img src="images/wonderhoy.webp" alt="Emu Wonderhoy" />
+        <img id="emu_click_below" src="images/emu_click_below.png" draggable="false" alt="Emu Click Below" />
+        <img id="emu_wonderhoy_stamp" src="images/wonderhoy.webp" style="display: none" draggable="false" alt="Emu Wonderhoy" />
       </div>
       <audio id="emu_wonderhoy">
         <source src="audio/emu_wonderhoy.wav" type="audio/wav" />
         <source src="audio/emu_wonderhoy.m4a" type="audio/m4a" />
         <source src="audio/emu_wonderhoy.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
+        Your browser does not support the audio file type.
       </audio>
       <div class="wonderhoy_button">
         <button onclick="wonderhoy()" class="wonderbutton">WONDERHOY!</button>
       </div>
-      <p class="tutorial">Click the button to <em>Wonderhoy</em>!</p>
       <p class="counter">
-        Wonderhoy counter: <span class="wonderhoy_counter">0</span>
+        Wonderhoy counter: <span class="wonderhoy_counter">0</span> <div class="added">+ 1</div> </div>
       </p>
+      
+      <p class="tutorial" id="tutorial">Click the button to <em>Wonderhoy</em>!</p>
     </div>
-    <button onclick="linksClick()" class="links">LINKS!</button>
+
+    <button onclick="linksClick()" class="links">LINKS!</button> 
+   
     <div class="links_popup">
+        <div style="display: inline;">
       <div class="links_top">
-      <p class="link_title""><img src="images/emu_sparkly.webp" class="emu_sparkly" alt="Emu Sparkly"> LINKS! <img src="images/emu_sparkly.webp" class="emu_sparkly" alt="Emu Sparkly"></p>
+      <p class="link_title""><img src="images/emu_sparkly.webp" draggable="false" class="emu_sparkly" alt="Emu Sparkly"> LINKS! <img src="images/emu_sparkly.webp" draggable="false" class="emu_sparkly" alt="Emu Sparkly"></p>
       <p>
         Inspired by:
         <a href="https://neal.fun/stimulation-clicker/" target="_blank"> Stimulation Clicker</a> from neal.fun (by Neal Agarwal)
       </p>
-      </div>
       <br>
+      </div>
+      <div class="links_content">
+
       <p style="font-weight: bold">Follow my socials!</p>
-      <a href="https://www.youtube.com/watch?v=GKJt6ci-Z8U" target="_blank">Placeholder Link</a>
+      <a href="https://www.instagram.com/404.kitto/" target="_blank">404.kitto on Instagram!</a>
       <p>Wanna donate? <a href="https://ko-fi.com/404397637" target="_blank">Ko-fi!</a></p>
+      </div>
+      </div>
     </div>
-    <p class="version">Beta v0.1: Work in Progress!</p>
+    
+    
+
+    <p class="version">Beta v0.1.1: Work in Progress!</p>
     <script src="index.js"></script>
   </body>
 </html>
